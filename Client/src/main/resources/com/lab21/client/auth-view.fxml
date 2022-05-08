@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab21.client.AuthViewController">
+    <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER" spacing="5.0">
+            <VBox alignment="CENTER_LEFT">
+                <Label text="Login" />
+                <TextField fx:id="txtName" onKeyPressed="#onTxtLoginKeyDown" />
+            </VBox>
+            <VBox alignment="CENTER_LEFT">
+                <Label text="Password" />
+                <TextField fx:id="txtPassword" onKeyPressed="#onTxtPasswordKeyDown" />
+            </VBox>
+            <Button fx:id="btnSubmit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSubmit" text="Sign In" />
+        </VBox>
+    </HBox>
+   <HBox alignment="CENTER">
+       <Label fx:id="lblError" textFill="RED" />
+   </HBox>
+</VBox>

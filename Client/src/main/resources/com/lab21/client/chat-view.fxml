@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.lab21.client.ChatViewController">
+    <TextArea id="txtChat" fx:id="txtChat" editable="false" VBox.vgrow="ALWAYS" />
+    <HBox spacing="10.0">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <TextField id="txtMsg" fx:id="txtMsg" onKeyPressed="#onTxtMsgKeyDown" HBox.hgrow="ALWAYS" />
+        <Button id="btnSend" fx:id="btnSend" mnemonicParsing="false" onAction="#onBtnSendClicked" text="Send" />
+    </HBox>
+
+</VBox>
